@@ -15,11 +15,13 @@
         <h1>🏏 Cricket Performance Analyzer</h1>
 
         <nav>
-            <a href="#">Dashboard</a>
-            <a href="#">Players</a>
-            <a href="#">Matches</a>
-            <a href="#">Statistics</a>
-            <a href="#">AI Coach</a>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Players</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">Statistics</a></li>
+                <li><a href="#">AI Coach</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -27,9 +29,10 @@
 
         <section class="hero">
             <h2>Track Every Match. Improve Every Game.</h2>
+
             <p>
-                Analyze batting, bowling and fielding performance with
-                powerful statistics.
+                Analyze batting, bowling and fielding performance using
+                powerful statistics and interactive dashboards.
             </p>
 
             <button>Analyze Performance</button>
@@ -37,25 +40,25 @@
 
         <section class="cards">
 
-            <div class="card">
-                <h3>🏏 Batting</h3>
-                <p>Runs, Average, Strike Rate</p>
-            </div>
+            <article class="card">
+                <h3>🏏 Batting Analysis</h3>
+                <p>Track runs, average, strike rate and consistency.</p>
+            </article>
 
-            <div class="card">
-                <h3>🎯 Bowling</h3>
-                <p>Economy, Wickets, Bowling Average</p>
-            </div>
+            <article class="card">
+                <h3>🎯 Bowling Analysis</h3>
+                <p>Monitor wickets, economy and bowling average.</p>
+            </article>
 
-            <div class="card">
-                <h3>🧤 Fielding</h3>
-                <p>Catches, Run Outs, Stumpings</p>
-            </div>
+            <article class="card">
+                <h3>🧤 Fielding Analysis</h3>
+                <p>Record catches, run-outs and overall fielding impact.</p>
+            </article>
 
-            <div class="card">
-                <h3>📈 Performance</h3>
-                <p>Graphs and Match Trends</p>
-            </div>
+            <article class="card">
+                <h3>📈 Performance Trends</h3>
+                <p>Visualize player growth through charts and reports.</p>
+            </article>
 
         </section>
 
@@ -65,23 +68,31 @@
 
             <table>
 
-                <tr>
-                    <th>Player</th>
-                    <th>Runs</th>
-                    <th>Average</th>
-                    <th>Strike Rate</th>
-                    <th>Wickets</th>
-                    <th>Economy</th>
-                </tr>
+                <thead>
 
-                <tr>
-                    <td>Ansh</td>
-                    <td>72</td>
-                    <td>48.00</td>
-                    <td>144.00</td>
-                    <td>3</td>
-                    <td>5.10</td>
-                </tr>
+                    <tr>
+                        <th>Player</th>
+                        <th>Runs</th>
+                        <th>Average</th>
+                        <th>Strike Rate</th>
+                        <th>Wickets</th>
+                        <th>Economy</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Ansh</td>
+                        <td>72</td>
+                        <td>48.00</td>
+                        <td>144.00</td>
+                        <td>3</td>
+                        <td>5.10</td>
+                    </tr>
+
+                </tbody>
 
             </table>
 
@@ -90,7 +101,7 @@
     </main>
 
     <footer>
-        <p>Built by Ansh • Version 1.0</p>
+        <p>© 2026 Cricket Performance Analyzer | Built by Ansh</p>
     </footer>
 
     <script src="script.js"></script>
