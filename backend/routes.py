@@ -1,26 +1,12 @@
 from fastapi import APIRouter
-
-from .database import players, matches, deliveries
+from .grounds import get_grounds
 
 router = APIRouter()
 
 
-@router.get("/players")
-def get_players():
+@router.get("/grounds")
+def grounds_list():
+
     return {
-        "players": players
-    }
-
-
-@router.get("/matches")
-def get_matches():
-    return {
-        "matches": matches
-    }
-
-
-@router.get("/deliveries")
-def get_deliveries():
-    return {
-        "deliveries": deliveries
+        "grounds": get_grounds()
     }
