@@ -230,7 +230,61 @@ Save Performance
 
 
 </main>
+<script>
 
+const form = document.querySelector("form");
+
+
+form.addEventListener("submit", async function(event){
+
+
+event.preventDefault();
+
+
+
+const player = {
+
+
+name: document.querySelector("input").value,
+
+
+ground_played:
+document.querySelector("select").value
+
+
+};
+
+
+
+const response = await fetch(
+"http://localhost:8000/players",
+{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body: JSON.stringify(player)
+
+}
+
+);
+
+
+
+const result = await response.json();
+
+
+alert(result.message);
+
+
+
+});
+
+
+</script>
 
 </body>
 
