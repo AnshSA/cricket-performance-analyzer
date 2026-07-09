@@ -1,12 +1,28 @@
-from fastapi import APIRouter
-from .grounds import get_grounds
+
+from .database import players
+from .models import Player
+
 
 router = APIRouter()
 
 
-@router.get("/grounds")
-def grounds_list():
+
+@router.post("/players")
+def add_player(player: Player):
+
+    players.append(player)
 
     return {
-        "grounds": get_grounds()
+
+        "message": "Player performance saved",
+
+        "player": player
+
     }
+
+
+
+@router.get("/players")
+def get_players():
+
+    return players
