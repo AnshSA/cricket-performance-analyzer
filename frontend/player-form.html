@@ -2,108 +2,228 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Performance Entry</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cricket Performance Entry</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
 <header>
-    <h1>🏏 Player Performance Entry</h1>
+
+<h1>🏏 Cricket Performance Analyzer</h1>
+
 </header>
+
 
 
 <main>
 
+
 <form>
 
-    <label>Player Name</label>
-    <input type="text" placeholder="Enter player name">
+
+<h2>Player Details</h2>
 
 
-    <label>Ground Played</label>
+<label>Player Name</label>
 
-    <select>
-
-        <option>Shree Cricket Mandir</option>
-
-        <option>Unique Cricket Ground</option>
-
-        <option>Mitrea Astro Turf</option>
-
-    </select>
-
-
-    <h2>🏏 Batting Statistics</h2>
-
-
-    <label>Total Runs</label>
-    <input type="number">
-
-
-    <label>Total Balls Faced</label>
-    <input type="number">
-
-
-    <label>Balls Faced Against Pacers</label>
-    <input type="number">
-
-
-    <label>Balls Faced Against Spinners</label>
-    <input type="number">
-
-
-    <label>Bowler Type Faced Most</label>
-
-    <select>
-
-        <option>Pacer</option>
-
-        <option>Spinner</option>
-
-        <option>Both</option>
-
-    </select>
+<input type="text" placeholder="Enter name">
 
 
 
-    <h2>🎯 Bowling Statistics</h2>
+<label>Ground Played</label>
 
+<select>
 
-    <label>Total Balls Bowled</label>
-    <input type="number">
+<option>Shree Cricket Mandir</option>
 
+<option>Unique Cricket Ground</option>
 
-    <label>Balls Bowled as Pacer</label>
-    <input type="number">
+<option>Mitrea Astro Turf</option>
 
-
-    <label>Balls Bowled as Spinner</label>
-    <input type="number">
-
-
-    <label>Bowling Style</label>
-
-    <select>
-
-        <option>Fast Bowler</option>
-
-        <option>Medium Pace</option>
-
-        <option>Off Spinner</option>
-
-        <option>Leg Spinner</option>
-
-    </select>
+</select>
 
 
 
-    <button type="submit">
-        Save Performance
-    </button>
+<label>Match Format</label>
+
+<select>
+
+<option>T20</option>
+
+<option>ODI</option>
+
+<option>Test</option>
+
+</select>
+
+
+
+<h2>🏏 Batting</h2>
+
+
+<label>Batting Position</label>
+
+<select>
+
+<option>Opener</option>
+
+<option>No. 3</option>
+
+<option>Middle Order</option>
+
+<option>Lower Order</option>
+
+<option>Finisher</option>
+
+</select>
+
+
+
+<label>Runs</label>
+
+<input type="number">
+
+
+
+<label>Balls Faced</label>
+
+<input type="number">
+
+
+
+<label>Balls Faced Against Pacers</label>
+
+<input type="number">
+
+
+
+<label>Balls Faced Against Spinners</label>
+
+<input type="number">
+
+
+
+<label>Dismissal Type</label>
+
+<select>
+
+<option>Not Out</option>
+
+<option>Bowled</option>
+
+<option>Caught</option>
+
+<option>LBW</option>
+
+<option>Run Out</option>
+
+<option>Stumped</option>
+
+</select>
+
+
+
+<h2>🎯 Bowling</h2>
+
+
+<label>Bowling Style</label>
+
+<select>
+
+<option>Fast</option>
+
+<option>Medium Pace</option>
+
+<option>Off Spin</option>
+
+<option>Leg Spin</option>
+
+</select>
+
+
+
+<label>Total Balls Bowled</label>
+
+<input type="number">
+
+
+
+<label>Pace Balls Bowled</label>
+
+<input type="number">
+
+
+
+<label>Spin Balls Bowled</label>
+
+<input type="number">
+
+
+
+<label>Wickets</label>
+
+<input type="number">
+
+
+
+<label>Runs Conceded</label>
+
+<input type="number">
+
+
+
+<h2>🌦 Match Conditions</h2>
+
+
+<label>Pitch Type</label>
+
+<select>
+
+<option>Batting Friendly</option>
+
+<option>Bowling Friendly</option>
+
+<option>Spin Friendly</option>
+
+<option>Seam Friendly</option>
+
+<option>Balanced</option>
+
+</select>
+
+
+
+<label>Weather</label>
+
+<select>
+
+<option>Sunny</option>
+
+<option>Cloudy</option>
+
+<option>Humid</option>
+
+<option>Rain</option>
+
+</select>
+
+
+
+<button type="submit">
+
+Save Performance
+
+</button>
 
 
 </form>
